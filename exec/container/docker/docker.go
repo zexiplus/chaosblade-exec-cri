@@ -22,8 +22,8 @@ import (
 	"io/ioutil"
 	"time"
 
-	"github.com/chaosblade-io/chaosblade-spec-go/log"
-	"github.com/chaosblade-io/chaosblade-spec-go/spec"
+	"github.com/lomoonmoonbird/chaosblade-spec-go/log"
+	"github.com/lomoonmoonbird/chaosblade-spec-go/spec"
 	"github.com/docker/docker/api/types"
 	containertype "github.com/docker/docker/api/types/container"
 	"github.com/docker/docker/api/types/filters"
@@ -31,7 +31,7 @@ import (
 	"github.com/docker/docker/api/types/versions"
 	"github.com/docker/docker/client"
 
-	"github.com/chaosblade-io/chaosblade-exec-cri/exec/container"
+	"github.com/lomoonmoonbird/chaosblade-exec-cri/exec/container"
 )
 
 var cli *Client

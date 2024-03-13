@@ -19,14 +19,14 @@ package exec
 import (
 	"context"
 	"fmt"
-	"github.com/chaosblade-io/chaosblade-spec-go/log"
+	"github.com/lomoonmoonbird/chaosblade-spec-go/log"
 	"time"
 
-	"github.com/chaosblade-io/chaosblade-spec-go/spec"
+	"github.com/lomoonmoonbird/chaosblade-spec-go/spec"
 	"github.com/docker/docker/api/types/container"
 	"github.com/docker/docker/api/types/network"
 
-	execContainer "github.com/chaosblade-io/chaosblade-exec-cri/exec/container"
+	execContainer "github.com/lomoonmoonbird/chaosblade-exec-cri/exec/container"
 )
 
 type RunInSidecarContainerExecutor struct {
