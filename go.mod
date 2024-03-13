@@ -1,4 +1,4 @@
-module github.com/chaosblade-io/chaosblade-exec-cri
+module github.com/lomoonmoonbird/chaosblade-exec-cri
 
 go 1.20
 
