@@ -3,12 +3,12 @@ module github.com/lomoonmoonbird/chaosblade-exec-cri
 go 1.20
 
 require (
-	github.com/lomoonmoonbird/chaosblade-exec-os master
-	github.com/lomoonmoonbird/chaosblade-spec-go master
 	github.com/containerd/cgroups v1.0.2-0.20210605143700-23b51209bf7b
 	github.com/containerd/containerd v1.5.6
 	github.com/docker/docker v0.0.0-20180612054059-a9fbbdc8dd87
 	github.com/gogo/protobuf v1.3.2
+	github.com/lomoonmoonbird/chaosblade-exec-os v1.8.5
+	github.com/lomoonmoonbird/chaosblade-spec-go v1.8.5
 	github.com/opencontainers/runtime-spec v1.0.3-0.20210326190908-1c3f411f0417
 )
 
@@ -65,4 +65,14 @@ require (
 	google.golang.org/protobuf v1.26.0 // indirect
 	gopkg.in/natefinch/lumberjack.v2 v2.0.0 // indirect
 	gopkg.in/yaml.v2 v2.4.0 // indirect
+)
+
+replace (
+	github.com/lomoonmoonbird/chaosblade-spec-go => ../chaosblade-spec-go
+	github.com/lomoonmoonbird/chaosblade-spec-go v1.8.5 => ../chaosblade-spec-go
+)
+
+replace (
+	github.com/lomoonmoonbird/chaosblade-exec-os => ../chaosblade-exec-os
+	github.com/lomoonmoonbird/chaosblade-exec-os v1.8.5 => ../chaosblade-exec-os
 )
