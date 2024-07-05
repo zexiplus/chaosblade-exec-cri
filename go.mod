@@ -7,9 +7,9 @@ require (
 	github.com/containerd/containerd v1.5.6
 	github.com/docker/docker v0.0.0-20180612054059-a9fbbdc8dd87
 	github.com/gogo/protobuf v1.3.2
+	github.com/opencontainers/runtime-spec v1.0.3-0.20210326190908-1c3f411f0417
 	github.com/zexiplus/chaosblade-exec-os v1.8.5
 	github.com/zexiplus/chaosblade-spec-go v1.8.5
-	github.com/opencontainers/runtime-spec v1.0.3-0.20210326190908-1c3f411f0417
 )
 
 require (
@@ -67,10 +67,6 @@ require (
 	gopkg.in/yaml.v2 v2.4.0 // indirect
 )
 
-replace (
-	github.com/zexiplus/chaosblade-spec-go => /home/chaosblade/chaosblade-spec-go
-)
+replace github.com/zexiplus/chaosblade-spec-go => /home/chaosblade/chaosblade-spec-go
 
-replace (
-	github.com/zexiplus/chaosblade-exec-os => /home/chaosblade/chaosblade-exec-os
-)
+replace github.com/zexiplus/chaosblade-exec-os => /home/chaosblade/chaosblade-exec-os
