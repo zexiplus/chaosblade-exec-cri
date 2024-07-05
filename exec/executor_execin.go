@@ -19,14 +19,14 @@ package exec
 import (
 	"context"
 	"fmt"
-	"github.com/lomoonmoonbird/chaosblade-spec-go/log"
+	"github.com/zexiplus/chaosblade-spec-go/log"
 	"path"
 	"strconv"
 	"strings"
 
-	"github.com/lomoonmoonbird/chaosblade-exec-cri/version"
-	"github.com/lomoonmoonbird/chaosblade-spec-go/channel"
-	"github.com/lomoonmoonbird/chaosblade-spec-go/spec"
+	"github.com/zexiplus/chaosblade-exec-cri/version"
+	"github.com/zexiplus/chaosblade-spec-go/channel"
+	"github.com/zexiplus/chaosblade-spec-go/spec"
 )
 
 var defaultBladeTarFilePath = fmt.Sprintf("/opt/chaosblade-%s.tar.gz", version.BladeVersion)

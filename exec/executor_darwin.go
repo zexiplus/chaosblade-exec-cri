@@ -17,9 +17,9 @@
 package exec
 
 import (
-	"github.com/lomoonmoonbird/chaosblade-exec-cri/exec/container"
-	"github.com/lomoonmoonbird/chaosblade-exec-cri/exec/container/docker"
-	"github.com/lomoonmoonbird/chaosblade-spec-go/spec"
+	"github.com/zexiplus/chaosblade-exec-cri/exec/container"
+	"github.com/zexiplus/chaosblade-exec-cri/exec/container/docker"
+	"github.com/zexiplus/chaosblade-spec-go/spec"
 )
 
 func GetClientByRuntime(expModel *spec.ExpModel) (container.Container, error) {

@@ -17,7 +17,7 @@
 package exec
 
 import (
-	"github.com/lomoonmoonbird/chaosblade-spec-go/spec"
+	"github.com/zexiplus/chaosblade-spec-go/spec"
 )
 
 func NewCriExpModelSpec() *DockerExpModelSpec {

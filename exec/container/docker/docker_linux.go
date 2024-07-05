@@ -18,7 +18,7 @@ package docker
 import (
 	"context"
 
-	"github.com/lomoonmoonbird/chaosblade-exec-cri/exec/container"
+	"github.com/zexiplus/chaosblade-exec-cri/exec/container"
 )
 
 func (c *Client) ExecContainer(ctx context.Context, containerId, command string) (output string, err error) {

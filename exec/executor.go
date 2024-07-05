@@ -19,11 +19,11 @@ package exec
 import (
 	"context"
 	"fmt"
-	"github.com/lomoonmoonbird/chaosblade-spec-go/log"
+	"github.com/zexiplus/chaosblade-spec-go/log"
 	"strings"
 
-	"github.com/lomoonmoonbird/chaosblade-exec-cri/exec/container"
-	"github.com/lomoonmoonbird/chaosblade-spec-go/spec"
+	"github.com/zexiplus/chaosblade-exec-cri/exec/container"
+	"github.com/zexiplus/chaosblade-spec-go/spec"
 )
 
 // BladeBin is the blade path in the chaosblade-tool image
@@ -52,7 +52,7 @@ var CommonFunc = func(uid string, ctx context.Context, model *spec.ExpModel) str
 		return GetAllDockerFlagNames()
 	})
 	if _, ok := spec.IsDestroy(ctx); ok {
-		// UPDATE: https://github.com/lomoonmoonbird/chaosblade/issues/334
+		// UPDATE: https://github.com/zexiplus/chaosblade/issues/334
 		return fmt.Sprintf("%s destroy %s %s %s", BladeBin, model.Target, model.ActionName, matchers)
 	}
 	return fmt.Sprintf("%s create %s %s %s --uid %s", BladeBin, model.Target, model.ActionName, matchers, uid)

@@ -21,10 +21,10 @@ import (
 	"log"
 	"os"
 
-	"github.com/lomoonmoonbird/chaosblade-spec-go/spec"
-	"github.com/lomoonmoonbird/chaosblade-spec-go/util"
+	"github.com/zexiplus/chaosblade-spec-go/spec"
+	"github.com/zexiplus/chaosblade-spec-go/util"
 
-	"github.com/lomoonmoonbird/chaosblade-exec-cri/exec"
+	"github.com/zexiplus/chaosblade-exec-cri/exec"
 )
 
 // main creates a yaml file of the experiments in the project

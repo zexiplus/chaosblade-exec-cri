@@ -19,13 +19,13 @@ package exec
 import (
 	"context"
 	"fmt"
-	"github.com/lomoonmoonbird/chaosblade-spec-go/log"
+	"github.com/zexiplus/chaosblade-spec-go/log"
 	"path"
 
-	"github.com/lomoonmoonbird/chaosblade-spec-go/spec"
-	"github.com/lomoonmoonbird/chaosblade-spec-go/util"
+	"github.com/zexiplus/chaosblade-spec-go/spec"
+	"github.com/zexiplus/chaosblade-spec-go/util"
 
-	"github.com/lomoonmoonbird/chaosblade-exec-cri/version"
+	"github.com/zexiplus/chaosblade-exec-cri/version"
 )
 
 var JvmSpecFileForYaml = ""
