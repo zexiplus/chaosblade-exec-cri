@@ -20,15 +20,13 @@ import (
 	"encoding/json"
 	"errors"
 	"fmt"
-	"github.com/zexiplus/chaosblade-spec-go/log"
 	"strings"
 	"sync"
 	"syscall"
 	"time"
 
-	"github.com/zexiplus/chaosblade-exec-cri/exec/container"
-	"github.com/zexiplus/chaosblade-spec-go/spec"
-	"github.com/zexiplus/chaosblade-spec-go/util"
+	"github.com/zexiplus/chaosblade-spec-go/log"
+
 	"github.com/containerd/containerd"
 	"github.com/containerd/containerd/cio"
 	"github.com/containerd/containerd/containers"
@@ -41,6 +39,9 @@ import (
 	containertype "github.com/docker/docker/api/types/container"
 	"github.com/docker/docker/api/types/network"
 	"github.com/opencontainers/runtime-spec/specs-go"
+	"github.com/zexiplus/chaosblade-exec-cri/exec/container"
+	"github.com/zexiplus/chaosblade-spec-go/spec"
+	"github.com/zexiplus/chaosblade-spec-go/util"
 )
 
 const (
@@ -203,7 +204,7 @@ func (c *Client) ExecContainer(ctx context.Context, containerId, command string)
 	return container.ExecContainer(ctx, id, command)
 }
 
-//ExecuteAndRemove: create and start a container for executing a command, and remove the container
+// ExecuteAndRemove: create and start a container for executing a command, and remove the container
 func (c *Client) ExecuteAndRemove(ctx context.Context, config *containertype.Config, hostConfig *containertype.HostConfig,
 	networkConfig *network.NetworkingConfig, containerName string, removed bool, timeout time.Duration,
 	command string, containerInfo container.ContainerInfo) (containerId string, output string, err error, code int32) {

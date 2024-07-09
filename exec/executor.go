@@ -19,8 +19,9 @@ package exec
 import (
 	"context"
 	"fmt"
-	"github.com/zexiplus/chaosblade-spec-go/log"
 	"strings"
+
+	"github.com/zexiplus/chaosblade-spec-go/log"
 
 	"github.com/zexiplus/chaosblade-exec-cri/exec/container"
 	"github.com/zexiplus/chaosblade-spec-go/spec"
