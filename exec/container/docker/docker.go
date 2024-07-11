@@ -112,6 +112,7 @@ func (c *Client) GetPidById(ctx context.Context, containerId string) (int32, err
 
 func (c *Client) GetContainerById(ctx context.Context, containerId string) (container.ContainerInfo, error, int32) {
 	option := types.ContainerListOptions{
+		All: true,
 		Filters: filters.NewArgs(
 			filters.Arg("id", containerId),
 		),
