@@ -85,6 +85,7 @@ func NewClient(endpoint, namespace string) (*Client, error) {
 	if namespace == "" {
 		namespace = DefaultContainerdNS
 	}
+	fmt.Println("endpoint is", endpoint)
 	cclient, err := containerd.New(endpoint, containerd.WithDefaultNamespace(namespace))
 	if err != nil {
 		return nil, err
